@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- VS Code Dark Theme Core Colors -->
+    <color name="background">#1E1E1E</color>
+    <color name="sidebar_background">#252526</color>
+    <color name="activity_bar_background">#333333</color>
+    <color name="editor_background">#1E1E1E</color>
+    <color name="status_bar_background">#007ACC</color>
+    <color name="terminal_background">#1E1E1E</color>
+    <color name="tab_background">#2D2D2D</color>
+    <color name="panel_background">#1E1E1E</color>
+
+    <!-- Accent Colors -->
+    <color name="accent_blue">#007ACC</color>
+    <color name="accent_light_blue">#0097FB</color>
+    <color name="accent_orange">#CE9178</color>
+    <color name="accent_green">#6A9955</color>
+    <color name="accent_yellow">#DCDCAA</color>
+    <color name="accent_red">#F44747</color>
+    <color name="accent_purple">#C586C0</color>
+    <color name="accent_cyan">#4EC9B0</color>
+
+    <!-- Activity Bar Icons -->
+    <color name="activity_bar_inactive_foreground">#858585</color>
+    <color name="activity_bar_active_foreground">#FFFFFF</color>
+    <color name="activity_bar_active_border">#FFFFFF</color>
+    <color name="activity_bar_badge_background">#007ACC</color>
+    <color name="activity_bar_badge_foreground">#FFFFFF</color>
+
+    <!-- Sidebar -->
+    <color name="sidebar_foreground">#CCCCCC</color>
+    <color name="sidebar_title_foreground">#BBBBBB</color>
+    <color name="sidebar_section_header_background">#80808033</color>
+    <color name="sidebar_section_header_foreground">#BBBBBB</color>
+    <color name="sidebar_list_active_background">#37373D</color>
+    <color name="sidebar_list_inactive_background">#2A2D2E</color>
+    <color name="sidebar_list_hover_background">#2A2D2E</color>
+
+    <!-- Editor -->
+    <color name="editor_foreground">#D4D4D4</color>
+    <color name="editor_line_highlight">#2A2D2E</color>
+    <color name="editor_selection_background">#264F78</color>
+    <color name="editor_line_number">#858585</color>
+    <color name="editor_line_number_active">#C6C6C6</color>
+    <color name="editor_cursor">#AEAFAD</color>
+    <color name="editor_whitespace">#3B3B3B</color>
+    <color name="editor_gutter_background">#1E1E1E</color>
+    <color name="editor_widget_background">#252526</color>
+
+    <!-- Tabs -->
+    <color name="tab_active_background">#1E1E1E</color>
+    <color name="tab_inactive_background">#2D2D2D</color>
+    <color name="tab_active_foreground">#FFFFFF</color>
+    <color name="tab_inactive_foreground">#969696</color>
+    <color name="tab_hover_background">#2D2D2D</color>
+    <color name="tab_border">#252526</color>
+    <color name="tab_active_border_top">#007ACC</color>
+
+    <!-- Status Bar -->
+    <color name="status_bar_foreground">#FFFFFF</color>
+    <color name="status_bar_no_folder_background">#68217A</color>
+    <color name="status_bar_debugging_background">#CC6633</color>
+    <color name="status_bar_item_hover_background">#FFFFFF1A</color>
+    <color name="status_bar_prominent_item_background">#00000080</color>
+    <color name="status_bar_remote_background">#16825D</color>
+
+    <!-- Panel -->
+    <color name="panel_title_active_foreground">#FFFFFF</color>
+    <color name="panel_title_inactive_foreground">#969696</color>
+    <color name="panel_title_active_border">#007ACC</color>
+    <color name="panel_input_border">#3B3B3B</color>
+
+    <!-- Terminal -->
+    <color name="terminal_foreground">#CCCCCC</color>
+    <color name="terminal_ansi_black">#0C0C0C</color>
+    <color name="terminal_ansi_red">#C50F1F</color>
+    <color name="terminal_ansi_green">#13A10E</color>
+    <color name="terminal_ansi_yellow">#C19C00</color>
+    <color name="terminal_ansi_blue">#0037DA</color>
+    <color name="terminal_ansi_magenta">#881798</color>
+    <color name="terminal_ansi_cyan">#3A96DD</color>
+    <color name="terminal_ansi_white">#CCCCCC</color>
+    <color name="terminal_ansi_bright_black">#767676</color>
+    <color name="terminal_ansi_bright_red">#E74856</color>
+    <color name="terminal_ansi_bright_green">#16C60C</color>
+    <color name="terminal_ansi_bright_yellow">#F9F1A5</color>
+    <color name="terminal_ansi_bright_blue">#3B78FF</color>
+    <color name="terminal_ansi_bright_magenta">#B4009E</color>
+    <color name="terminal_ansi_bright_cyan">#61D6D6</color>
+    <color name="terminal_ansi_bright_white">#F2F2F2</color>
+
+    <!-- Scrollbar -->
+    <color name="scrollbar_background">#1E1E1E</color>
+    <color name="scrollbar_slider_background">#424242</color>
+    <color name="scrollbar_slider_hover_background">#4F4F4F</color>
+    <color name="scrollbar_slider_active_background">#6E6E6E</color>
+
+    <!-- Input -->
+    <color name="input_background">#3C3C3C</color>
+    <color name="input_foreground">#CCCCCC</color>
+    <color name="input_border">#3B3B3B</color>
+    <color name="input_placeholder_foreground">#767676</color>
+    <color name="input_focus_border">#007ACC</color>
+
+    <!-- Button -->
+    <color name="button_background">#007ACC</color>
+    <color name="button_foreground">#FFFFFF</color>
+    <color name="button_hover_background">#1C97EA</color>
+    <color name="button_secondary_background">#3A3D41</color>
+    <color name="button_secondary_foreground">#CCCCCC</color>
+    <color name="button_secondary_hover_background">#45494E</color>
+
+    <!-- Dropdown / List -->
+    <color name="dropdown_background">#252526</color>
+    <color name="dropdown_foreground">#CCCCCC</color>
+    <color name="dropdown_border">#454545</color>
+    <color name="list_active_background">#094771</color>
+    <color name="list_hover_background">#2A2D2E</color>
+    <color name="list_inactive_focus_background">#313135</color>
+
+    <!-- Notifications -->
+    <color name="notification_background">#252526</color>
+    <color name="notification_foreground">#CCCCCC</color>
+    <color name="notification_center_header_background">#303031</color>
+    <color name="notification_toast_border">#3B3B3B</color>
+
+    <!-- Badge -->
+    <color name="badge_background">#4D4D4D</color>
+    <color name="badge_foreground">#FFFFFF</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#CCCCCC</color>
+    <color name="text_secondary">#969696</color>
+    <color name="text_disabled">#5A5A5A</color>
+    <color name="text_link">#3794FF</color>
+
+    <!-- Divider / Border -->
+    <color name="divider">#3B3B3B</color>
+    <color name="border">#3B3B3B</color>
+    <color name="focus_border">#007ACC</color>
+
+    <!-- Semantic Colors -->
+    <color name="error_foreground">#F48771</color>
+    <color name="warning_foreground">#CCA700</color>
+    <color name="info_foreground">#75BEFF</color>
+    <color name="success_foreground">#89D185</color>
+
+    <!-- Widget / Menu -->
+    <color name="widget_shadow">#0000005A</color>
+    <color name="menu_background">#252526</color>
+    <color name="menu_foreground">#CCCCCC</color>
+    <color name="menu_separator">#454545</color>
+    <color name="menu_selection_background">#094771</color>
+</resources>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Android VSCode</string>
+
+    <!-- 活动栏 -->
+    <string name="activity_bar_explorer">资源管理器</string>
+    <string name="activity_bar_search">搜索</string>
+    <string name="activity_bar_source_control">源代码管理</string>
+    <string name="activity_bar_extensions">扩展</string>
+    <string name="activity_bar_debug">运行和调试</string>
+
+    <!-- 面板 -->
+    <string name="panel_problems">问题</string>
+    <string name="panel_output">输出</string>
+    <string name="panel_terminal">终端</string>
+    <string name="panel_debug_console">调试控制台</string>
+
+    <!-- 状态栏 -->
+    <string name="status_bar_branch">main</string>
+    <string name="status_bar_encoding">UTF-8</string>
+    <string name="status_bar_line_endings">LF</string>
+    <string name="status_bar_language">纯文本</string>
+    <string name="status_bar_feedback">反馈</string>
+    <string name="status_bar_notifications">通知</string>
+    <string name="status_bar_line_col">第 %1$d 行，第 %2$d 列</string>
+
+    <!-- 菜单项 -->
+    <string name="menu_new_file">新建文件</string>
+    <string name="menu_new_folder">新建文件夹</string>
+    <string name="menu_open_file">打开文件</string>
+    <string name="menu_open_folder">打开文件夹</string>
+    <string name="menu_save">保存</string>
+    <string name="menu_save_as">另存为…</string>
+    <string name="menu_save_all">全部保存</string>
+    <string name="menu_undo">撤销</string>
+    <string name="menu_redo">重做</string>
+    <string name="menu_cut">剪切</string>
+    <string name="menu_copy">复制</string>
+    <string name="menu_paste">粘贴</string>
+    <string name="menu_select_all">全选</string>
+    <string name="menu_find">查找</string>
+    <string name="menu_replace">替换</string>
+    <string name="menu_settings">设置</string>
+    <string name="menu_command_palette">命令面板…</string>
+
+    <!-- 对话框消息 -->
+    <string name="dialog_confirm_delete_title">确认删除</string>
+    <string name="dialog_confirm_delete_message">确定要删除"%1$s"吗？</string>
+    <string name="dialog_save_changes_title">保存更改</string>
+    <string name="dialog_save_changes_message">是否保存对"%1$s"的更改？</string>
+    <string name="dialog_unsaved_changes">有未保存的更改，是否保存？</string>
+    <string name="dialog_yes">是</string>
+    <string name="dialog_no">否</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_save">保存</string>
+    <string name="dialog_dont_save">不保存</string>
+    <string name="dialog_ok">确定</string>
+    <string name="dialog_close">关闭</string>
+
+    <!-- 编辑器标签 -->
+    <string name="editor_welcome">欢迎使用 Android VSCode</string>
+    <string name="editor_no_file_open">当前没有打开的文件</string>
+    <string name="editor_untitled">未命名</string>
+    <string name="editor_modified">已修改</string>
+    <string name="editor_readonly">只读</string>
+    <string name="editor_line_count">%1$d 行</string>
+
+    <!-- 侧边栏 -->
+    <string name="sidebar_no_folder_open">尚未打开文件夹。</string>
+    <string name="sidebar_open_folder_button">打开文件夹</string>
+    <string name="sidebar_collapse_all">全部折叠</string>
+
+    <!-- 搜索 -->
+    <string name="search_find">搜索</string>
+    <string name="search_replace">替换</string>
+    <string name="search_find_in_files">在文件中查找</string>
+    <string name="search_replace_in_files">在文件中替换</string>
+    <string name="search_match_case">区分大小写</string>
+    <string name="search_whole_word">全词匹配</string>
+    <string name="search_regex">使用正则表达式</string>
+    <string name="search_no_results">未找到结果。</string>
+    <string name="search_result_count">在 %2$d 个文件中找到 %1$d 个结果</string>
+
+    <!-- 源代码管理 -->
+    <string name="scm_changes">更改</string>
+    <string name="scm_staged_changes">暂存的更改</string>
+    <string name="scm_no_changes">未检测到更改。</string>
+    <string name="scm_commit">提交</string>
+    <string name="scm_commit_message_hint">消息（按 Ctrl+Enter 提交）</string>
+    <string name="scm_initialize_repo">初始化仓库</string>
+
+    <!-- 扩展 -->
+    <string name="extensions_search">搜索扩展</string>
+    <string name="extensions_installed">已安装</string>
+    <string name="extensions_recommended">推荐</string>
+    <string name="extensions_no_installed">未安装任何扩展。</string>
+    <string name="extensions_install">安装</string>
+    <string name="extensions_uninstall">卸载</string>
+    <string name="extensions_enable">启用</string>
+    <string name="extensions_disable">禁用</string>
+
+    <!-- 调试 -->
+    <string name="debug_run">运行</string>
+    <string name="debug_run_and_debug">运行和调试</string>
+    <string name="debug_no_configuration">未找到调试配置。</string>
+    <string name="debug_create_launch_json">创建 launch.json 文件</string>
+    <string name="debug_start">开始调试</string>
+    <string name="debug_stop">停止</string>
+    <string name="debug_pause">暂停</string>
+    <string name="debug_continue">继续</string>
+    <string name="debug_step_over">逐过程</string>
+    <string name="debug_step_into">单步调试</string>
+    <string name="debug_step_out">跳出</string>
+    <string name="debug_restart">重新启动</string>
+
+    <!-- 终端 -->
+    <string name="terminal_new">新建终端</string>
+    <string name="terminal_kill">终止终端</string>
+    <string name="terminal_clear">清除终端</string>
+    <string name="terminal_select_all">全选</string>
+    <string name="terminal_copy">复制</string>
+    <string name="terminal_paste">粘贴</string>
+
+    <!-- 通用 -->
+    <string name="close">关闭</string>
+    <string name="close_all">全部关闭</string>
+    <string name="close_others">关闭其他</string>
+    <string name="close_to_right">关闭右侧</string>
+    <string name="close_saved">关闭已保存</string>
+    <string name="toggle_panel">切换面板</string>
+    <string name="toggle_sidebar">切换侧边栏</string>
+    <string name="toggle_fullscreen">切换全屏</string>
+</resources>

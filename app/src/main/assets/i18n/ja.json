@@ -1,0 +1,181 @@
+{
+  "app_name": "Android VSCode",
+
+  "activity_bar": {
+    "explorer": "エクスプローラー",
+    "search": "検索",
+    "source_control": "ソース管理",
+    "extensions": "拡張機能",
+    "debug": "デバッグ",
+    "settings": "設定"
+  },
+
+  "sidebar": {
+    "open_folder": "フォルダーを開く",
+    "no_folder_open": "フォルダーが開かれていません",
+    "new_file": "新しいファイル",
+    "new_folder": "新しいフォルダー",
+    "refresh": "更新",
+    "collapse_all": "すべて折りたたむ"
+  },
+
+  "editor": {
+    "untitled": "無題",
+    "modified": "変更済み",
+    "read_only": "読み取り専用",
+    "line": "行",
+    "column": "列",
+    "spaces": "スペース",
+    "encoding": "エンコーディング",
+    "language": "言語"
+  },
+
+  "panel": {
+    "problems": "問題",
+    "output": "出力",
+    "terminal": "ターミナル",
+    "debug_console": "デバッグコンソール",
+    "new_terminal": "新しいターミナル",
+    "kill_terminal": "ターミナルを終了",
+    "clear": "クリア"
+  },
+
+  "status_bar": {
+    "git_branch": "Git ブランチ",
+    "line_col": "行/列",
+    "indentation": "インデント",
+    "encoding": "エンコーディング",
+    "language_mode": "言語モード",
+    "feedback": "フィードバック"
+  },
+
+  "menu": {
+    "file": "ファイル",
+    "edit": "編集",
+    "selection": "選択",
+    "view": "表示",
+    "go": "移動",
+    "run": "実行",
+    "terminal": "ターミナル",
+    "help": "ヘルプ",
+    "new_file": "新しいファイル",
+    "open_file": "ファイルを開く",
+    "save": "保存",
+    "save_as": "名前を付けて保存",
+    "close": "閉じる",
+    "undo": "元に戻す",
+    "redo": "やり直し",
+    "cut": "切り取り",
+    "copy": "コピー",
+    "paste": "貼り付け",
+    "find": "検索",
+    "replace": "置換",
+    "select_all": "すべて選択",
+    "command_palette": "コマンドパレット",
+    "toggle_sidebar": "サイドバーの切り替え",
+    "toggle_panel": "パネルの切り替え",
+    "zoom_in": "拡大",
+    "zoom_out": "縮小"
+  },
+
+  "search": {
+    "find": "検索",
+    "replace": "置換",
+    "replace_all": "すべて置換",
+    "case_sensitive": "大文字小文字を区別",
+    "whole_word": "単語単位",
+    "regex": "正規表現",
+    "files_to_include": "含めるファイル",
+    "files_to_exclude": "除外するファイル",
+    "no_results": "結果なし",
+    "searching": "検索中..."
+  },
+
+  "git": {
+    "initialize_repository": "リポジトリを初期化",
+    "branch": "ブランチ",
+    "commit": "コミット",
+    "push": "プッシュ",
+    "pull": "プル",
+    "stage": "ステージ",
+    "unstage": "ステージ解除",
+    "discard": "破棄",
+    "commit_message": "コミットメッセージ",
+    "no_changes": "変更なし",
+    "modified": "変更済み",
+    "staged": "ステージ済み",
+    "untracked": "未追跡"
+  },
+
+  "extensions": {
+    "search": "拡張機能を検索",
+    "install": "インストール",
+    "uninstall": "アンインストール",
+    "enable": "有効化",
+    "disable": "無効化",
+    "no_extensions": "拡張機能が見つかりません",
+    "marketplace": "マーケットプレイス",
+    "installed": "インストール済み",
+    "recommended": "おすすめ"
+  },
+
+  "terminal": {
+    "no_terminals": "ターミナルなし",
+    "command": "コマンド",
+    "running": "実行中",
+    "process_exited": "プロセスが終了しました"
+  },
+
+  "build": {
+    "build": "ビルド",
+    "run": "実行",
+    "debug": "デバッグ",
+    "stop": "停止",
+    "build_successful": "ビルド成功",
+    "build_failed": "ビルド失敗",
+    "no_build_tasks": "ビルドタスクなし",
+    "building": "ビルド中..."
+  },
+
+  "dialog": {
+    "ok": "OK",
+    "cancel": "キャンセル",
+    "yes": "はい",
+    "no": "いいえ",
+    "save": "保存",
+    "discard": "破棄",
+    "confirm": "確認",
+    "error": "エラー",
+    "warning": "警告",
+    "info": "情報",
+    "unsaved_changes": "保存されていない変更",
+    "file_exists": "ファイルが存在します",
+    "delete_confirm": "削除の確認"
+  },
+
+  "settings": {
+    "appearance": "外観",
+    "editor": "エディター",
+    "terminal": "ターミナル",
+    "git": "Git",
+    "language": "言語",
+    "font_size": "フォントサイズ",
+    "tab_size": "タブサイズ",
+    "theme": "テーマ",
+    "auto_save": "自動保存",
+    "word_wrap": "折り返し",
+    "minimap": "ミニマップ",
+    "line_numbers": "行番号"
+  },
+
+  "errors": {
+    "file_not_found": "ファイルが見つかりません",
+    "permission_denied": "権限が拒否されました",
+    "disk_full": "ディスクがいっぱいです",
+    "network_error": "ネットワークエラー",
+    "unknown_error": "不明なエラー",
+    "termux_not_found": "Termuxが見つかりません",
+    "compiler_not_found": "コンパイラが見つかりません",
+    "build_error": "ビルドエラー"
+  }
+}

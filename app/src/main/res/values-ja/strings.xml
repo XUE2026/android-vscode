@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Android VSCode</string>
+
+    <!-- アクティビティバー -->
+    <string name="activity_bar_explorer">エクスプローラー</string>
+    <string name="activity_bar_search">検索</string>
+    <string name="activity_bar_source_control">ソース管理</string>
+    <string name="activity_bar_extensions">拡張機能</string>
+    <string name="activity_bar_debug">実行とデバッグ</string>
+
+    <!-- パネル -->
+    <string name="panel_problems">問題</string>
+    <string name="panel_output">出力</string>
+    <string name="panel_terminal">ターミナル</string>
+    <string name="panel_debug_console">デバッグコンソール</string>
+
+    <!-- ステータスバー -->
+    <string name="status_bar_branch">main</string>
+    <string name="status_bar_encoding">UTF-8</string>
+    <string name="status_bar_line_endings">LF</string>
+    <string name="status_bar_language">プレーンテキスト</string>
+    <string name="status_bar_feedback">フィードバック</string>
+    <string name="status_bar_notifications">通知</string>
+    <string name="status_bar_line_col">%1$d 行、%2$d 列</string>
+
+    <!-- メニュー項目 -->
+    <string name="menu_new_file">新規ファイル</string>
+    <string name="menu_new_folder">新規フォルダー</string>
+    <string name="menu_open_file">ファイルを開く</string>
+    <string name="menu_open_folder">フォルダーを開く</string>
+    <string name="menu_save">保存</string>
+    <string name="menu_save_as">名前を付けて保存…</string>
+    <string name="menu_save_all">すべて保存</string>
+    <string name="menu_undo">元に戻す</string>
+    <string name="menu_redo">やり直す</string>
+    <string name="menu_cut">切り取り</string>
+    <string name="menu_copy">コピー</string>
+    <string name="menu_paste">貼り付け</string>
+    <string name="menu_select_all">すべて選択</string>
+    <string name="menu_find">検索</string>
+    <string name="menu_replace">置換</string>
+    <string name="menu_settings">設定</string>
+    <string name="menu_command_palette">コマンドパレット…</string>
+
+    <!-- ダイアログメッセージ -->
+    <string name="dialog_confirm_delete_title">削除の確認</string>
+    <string name="dialog_confirm_delete_message">"%1$s"を削除してもよろしいですか？</string>
+    <string name="dialog_save_changes_title">変更の保存</string>
+    <string name="dialog_save_changes_message">"%1$s"への変更を保存しますか？</string>
+    <string name="dialog_unsaved_changes">未保存の変更があります。保存しますか？</string>
+    <string name="dialog_yes">はい</string>
+    <string name="dialog_no">いいえ</string>
+    <string name="dialog_cancel">キャンセル</string>
+    <string name="dialog_save">保存</string>
+    <string name="dialog_dont_save">保存しない</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_close">閉じる</string>
+
+    <!-- エディターラベル -->
+    <string name="editor_welcome">Android VSCode へようこそ</string>
+    <string name="editor_no_file_open">現在開いているファイルはありません</string>
+    <string name="editor_untitled">無題</string>
+    <string name="editor_modified">変更済み</string>
+    <string name="editor_readonly">読み取り専用</string>
+    <string name="editor_line_count">%1$d 行</string>
+
+    <!-- サイドバー -->
+    <string name="sidebar_no_folder_open">フォルダーが開かれていません。</string>
+    <string name="sidebar_open_folder_button">フォルダーを開く</string>
+    <string name="sidebar_collapse_all">すべて折りたたむ</string>
+
+    <!-- 検索 -->
+    <string name="search_find">検索</string>
+    <string name="search_replace">置換</string>
+    <string name="search_find_in_files">ファイル内検索</string>
+    <string name="search_replace_in_files">ファイル内置換</string>
+    <string name="search_match_case">大文字/小文字を区別</string>
+    <string name="search_whole_word">単語単位</string>
+    <string name="search_regex">正規表現を使用</string>
+    <string name="search_no_results">結果が見つかりません。</string>
+    <string name="search_result_count">%2$d ファイルに %1$d 件の結果</string>
+
+    <!-- ソース管理 -->
+    <string name="scm_changes">変更</string>
+    <string name="scm_staged_changes">ステージング済みの変更</string>
+    <string name="scm_no_changes">変更は検出されませんでした。</string>
+    <string name="scm_commit">コミット</string>
+    <string name="scm_commit_message_hint">メッセージ（Ctrl+Enter でコミット）</string>
+    <string name="scm_initialize_repo">リポジトリを初期化</string>
+
+    <!-- 拡張機能 -->
+    <string name="extensions_search">拡張機能を検索</string>
+    <string name="extensions_installed">インストール済み</string>
+    <string name="extensions_recommended">おすすめ</string>
+    <string name="extensions_no_installed">拡張機能がインストールされていません。</string>
+    <string name="extensions_install">インストール</string>
+    <string name="extensions_uninstall">アンインストール</string>
+    <string name="extensions_enable">有効</string>
+    <string name="extensions_disable">無効</string>
+
+    <!-- デバッグ -->
+    <string name="debug_run">実行</string>
+    <string name="debug_run_and_debug">実行とデバッグ</string>
+    <string name="debug_no_configuration">デバッグ構成が見つかりません。</string>
+    <string name="debug_create_launch_json">launch.json ファイルを作成</string>
+    <string name="debug_start">デバッグの開始</string>
+    <string name="debug_stop">停止</string>
+    <string name="debug_pause">一時停止</string>
+    <string name="debug_continue">続行</string>
+    <string name="debug_step_over">ステップオーバー</string>
+    <string name="debug_step_into">ステップイン</string>
+    <string name="debug_step_out">ステップアウト</string>
+    <string name="debug_restart">再起動</string>
+
+    <!-- ターミナル -->
+    <string name="terminal_new">新しいターミナル</string>
+    <string name="terminal_kill">ターミナルを強制終了</string>
+    <string name="terminal_clear">ターミナルをクリア</string>
+    <string name="terminal_select_all">すべて選択</string>
+    <string name="terminal_copy">コピー</string>
+    <string name="terminal_paste">貼り付け</string>
+
+    <!-- 一般 -->
+    <string name="close">閉じる</string>
+    <string name="close_all">すべて閉じる</string>
+    <string name="close_others">その他を閉じる</string>
+    <string name="close_to_right">右側を閉じる</string>
+    <string name="close_saved">保存済みを閉じる</string>
+    <string name="toggle_panel">パネルを切り替え</string>
+    <string name="toggle_sidebar">サイドバーを切り替え</string>
+    <string name="toggle_fullscreen">全画面表示を切り替え</string>
+</resources>

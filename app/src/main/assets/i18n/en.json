@@ -1,0 +1,181 @@
+{
+  "app_name": "Android VSCode",
+
+  "activity_bar": {
+    "explorer": "Explorer",
+    "search": "Search",
+    "source_control": "Source Control",
+    "extensions": "Extensions",
+    "debug": "Debug",
+    "settings": "Settings"
+  },
+
+  "sidebar": {
+    "open_folder": "Open Folder",
+    "no_folder_open": "No Folder Open",
+    "new_file": "New File",
+    "new_folder": "New Folder",
+    "refresh": "Refresh",
+    "collapse_all": "Collapse All"
+  },
+
+  "editor": {
+    "untitled": "Untitled",
+    "modified": "Modified",
+    "read_only": "Read Only",
+    "line": "Line",
+    "column": "Column",
+    "spaces": "Spaces",
+    "encoding": "Encoding",
+    "language": "Language"
+  },
+
+  "panel": {
+    "problems": "Problems",
+    "output": "Output",
+    "terminal": "Terminal",
+    "debug_console": "Debug Console",
+    "new_terminal": "New Terminal",
+    "kill_terminal": "Kill Terminal",
+    "clear": "Clear"
+  },
+
+  "status_bar": {
+    "git_branch": "Git Branch",
+    "line_col": "Line/Column",
+    "indentation": "Indentation",
+    "encoding": "Encoding",
+    "language_mode": "Language Mode",
+    "feedback": "Feedback"
+  },
+
+  "menu": {
+    "file": "File",
+    "edit": "Edit",
+    "selection": "Selection",
+    "view": "View",
+    "go": "Go",
+    "run": "Run",
+    "terminal": "Terminal",
+    "help": "Help",
+    "new_file": "New File",
+    "open_file": "Open File",
+    "save": "Save",
+    "save_as": "Save As",
+    "close": "Close",
+    "undo": "Undo",
+    "redo": "Redo",
+    "cut": "Cut",
+    "copy": "Copy",
+    "paste": "Paste",
+    "find": "Find",
+    "replace": "Replace",
+    "select_all": "Select All",
+    "command_palette": "Command Palette",
+    "toggle_sidebar": "Toggle Sidebar",
+    "toggle_panel": "Toggle Panel",
+    "zoom_in": "Zoom In",
+    "zoom_out": "Zoom Out"
+  },
+
+  "search": {
+    "find": "Find",
+    "replace": "Replace",
+    "replace_all": "Replace All",
+    "case_sensitive": "Case Sensitive",
+    "whole_word": "Whole Word",
+    "regex": "Regex",
+    "files_to_include": "Files to Include",
+    "files_to_exclude": "Files to Exclude",
+    "no_results": "No Results",
+    "searching": "Searching..."
+  },
+
+  "git": {
+    "initialize_repository": "Initialize Repository",
+    "branch": "Branch",
+    "commit": "Commit",
+    "push": "Push",
+    "pull": "Pull",
+    "stage": "Stage",
+    "unstage": "Unstage",
+    "discard": "Discard",
+    "commit_message": "Commit Message",
+    "no_changes": "No Changes",
+    "modified": "Modified",
+    "staged": "Staged",
+    "untracked": "Untracked"
+  },
+
+  "extensions": {
+    "search": "Search Extensions",
+    "install": "Install",
+    "uninstall": "Uninstall",
+    "enable": "Enable",
+    "disable": "Disable",
+    "no_extensions": "No Extensions Found",
+    "marketplace": "Marketplace",
+    "installed": "Installed",
+    "recommended": "Recommended"
+  },
+
+  "terminal": {
+    "no_terminals": "No Terminals",
+    "command": "Command",
+    "running": "Running",
+    "process_exited": "Process Exited"
+  },
+
+  "build": {
+    "build": "Build",
+    "run": "Run",
+    "debug": "Debug",
+    "stop": "Stop",
+    "build_successful": "Build Successful",
+    "build_failed": "Build Failed",
+    "no_build_tasks": "No Build Tasks",
+    "building": "Building..."
+  },
+
+  "dialog": {
+    "ok": "OK",
+    "cancel": "Cancel",
+    "yes": "Yes",
+    "no": "No",
+    "save": "Save",
+    "discard": "Discard",
+    "confirm": "Confirm",
+    "error": "Error",
+    "warning": "Warning",
+    "info": "Info",
+    "unsaved_changes": "Unsaved Changes",
+    "file_exists": "File Exists",
+    "delete_confirm": "Delete Confirmation"
+  },
+
+  "settings": {
+    "appearance": "Appearance",
+    "editor": "Editor",
+    "terminal": "Terminal",
+    "git": "Git",
+    "language": "Language",
+    "font_size": "Font Size",
+    "tab_size": "Tab Size",
+    "theme": "Theme",
+    "auto_save": "Auto Save",
+    "word_wrap": "Word Wrap",
+    "minimap": "Minimap",
+    "line_numbers": "Line Numbers"
+  },
+
+  "errors": {
+    "file_not_found": "File Not Found",
+    "permission_denied": "Permission Denied",
+    "disk_full": "Disk Full",
+    "network_error": "Network Error",
+    "unknown_error": "Unknown Error",
+    "termux_not_found": "Termux Not Found",
+    "compiler_not_found": "Compiler Not Found",
+    "build_error": "Build Error"
+  }
+}

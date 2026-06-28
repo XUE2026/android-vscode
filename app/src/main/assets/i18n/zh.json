@@ -1,0 +1,181 @@
+{
+  "app_name": "Android VSCode",
+
+  "activity_bar": {
+    "explorer": "资源管理器",
+    "search": "搜索",
+    "source_control": "源代码管理",
+    "extensions": "扩展",
+    "debug": "调试",
+    "settings": "设置"
+  },
+
+  "sidebar": {
+    "open_folder": "打开文件夹",
+    "no_folder_open": "未打开文件夹",
+    "new_file": "新建文件",
+    "new_folder": "新建文件夹",
+    "refresh": "刷新",
+    "collapse_all": "全部折叠"
+  },
+
+  "editor": {
+    "untitled": "无标题",
+    "modified": "已修改",
+    "read_only": "只读",
+    "line": "行",
+    "column": "列",
+    "spaces": "空格",
+    "encoding": "编码",
+    "language": "语言"
+  },
+
+  "panel": {
+    "problems": "问题",
+    "output": "输出",
+    "terminal": "终端",
+    "debug_console": "调试控制台",
+    "new_terminal": "新建终端",
+    "kill_terminal": "终止终端",
+    "clear": "清除"
+  },
+
+  "status_bar": {
+    "git_branch": "Git 分支",
+    "line_col": "行/列",
+    "indentation": "缩进",
+    "encoding": "编码",
+    "language_mode": "语言模式",
+    "feedback": "反馈"
+  },
+
+  "menu": {
+    "file": "文件",
+    "edit": "编辑",
+    "selection": "选择",
+    "view": "查看",
+    "go": "转到",
+    "run": "运行",
+    "terminal": "终端",
+    "help": "帮助",
+    "new_file": "新建文件",
+    "open_file": "打开文件",
+    "save": "保存",
+    "save_as": "另存为",
+    "close": "关闭",
+    "undo": "撤销",
+    "redo": "重做",
+    "cut": "剪切",
+    "copy": "复制",
+    "paste": "粘贴",
+    "find": "查找",
+    "replace": "替换",
+    "select_all": "全选",
+    "command_palette": "命令面板",
+    "toggle_sidebar": "切换侧边栏",
+    "toggle_panel": "切换面板",
+    "zoom_in": "放大",
+    "zoom_out": "缩小"
+  },
+
+  "search": {
+    "find": "查找",
+    "replace": "替换",
+    "replace_all": "全部替换",
+    "case_sensitive": "区分大小写",
+    "whole_word": "全词匹配",
+    "regex": "正则表达式",
+    "files_to_include": "包含的文件",
+    "files_to_exclude": "排除的文件",
+    "no_results": "无结果",
+    "searching": "搜索中..."
+  },
+
+  "git": {
+    "initialize_repository": "初始化仓库",
+    "branch": "分支",
+    "commit": "提交",
+    "push": "推送",
+    "pull": "拉取",
+    "stage": "暂存",
+    "unstage": "取消暂存",
+    "discard": "放弃",
+    "commit_message": "提交信息",
+    "no_changes": "无更改",
+    "modified": "已修改",
+    "staged": "已暂存",
+    "untracked": "未跟踪"
+  },
+
+  "extensions": {
+    "search": "搜索扩展",
+    "install": "安装",
+    "uninstall": "卸载",
+    "enable": "启用",
+    "disable": "禁用",
+    "no_extensions": "未找到扩展",
+    "marketplace": "市场",
+    "installed": "已安装",
+    "recommended": "推荐"
+  },
+
+  "terminal": {
+    "no_terminals": "无终端",
+    "command": "命令",
+    "running": "运行中",
+    "process_exited": "进程已退出"
+  },
+
+  "build": {
+    "build": "构建",
+    "run": "运行",
+    "debug": "调试",
+    "stop": "停止",
+    "build_successful": "构建成功",
+    "build_failed": "构建失败",
+    "no_build_tasks": "无构建任务",
+    "building": "构建中..."
+  },
+
+  "dialog": {
+    "ok": "确定",
+    "cancel": "取消",
+    "yes": "是",
+    "no": "否",
+    "save": "保存",
+    "discard": "放弃",
+    "confirm": "确认",
+    "error": "错误",
+    "warning": "警告",
+    "info": "信息",
+    "unsaved_changes": "未保存的更改",
+    "file_exists": "文件已存在",
+    "delete_confirm": "删除确认"
+  },
+
+  "settings": {
+    "appearance": "外观",
+    "editor": "编辑器",
+    "terminal": "终端",
+    "git": "Git",
+    "language": "语言",
+    "font_size": "字体大小",
+    "tab_size": "制表符大小",
+    "theme": "主题",
+    "auto_save": "自动保存",
+    "word_wrap": "自动换行",
+    "minimap": "缩略图",
+    "line_numbers": "行号"
+  },
+
+  "errors": {
+    "file_not_found": "文件未找到",
+    "permission_denied": "权限被拒绝",
+    "disk_full": "磁盘已满",
+    "network_error": "网络错误",
+    "unknown_error": "未知错误",
+    "termux_not_found": "未找到 Termux",
+    "compiler_not_found": "未找到编译器",
+    "build_error": "构建错误"
+  }
+}
