@@ -209,20 +209,12 @@ class MainActivity : AppCompatActivity() {
     // ==================== File Operations ====================
 
     private fun openFile() {
-        val intent = Intent(Intent.ACTION_OPEN_DOCUMENT).apply {
-            addCategory(Intent.CATEGORY_OPENABLE)
-            type = "*/*"
-            putExtra(Intent.EXTRA_ALLOW_MULTIPLE, false)
-        }
-        fileOpenLauncher.launch(intent)
+        fileOpenLauncher.launch(arrayOf("*/*"))
     }
 
     private fun openFolder() {
-        val intent = Intent(Intent.ACTION_OPEN_DOCUMENT_TREE).apply {
-            putExtra(DocumentsContract.EXTRA_INITIAL_URI,
-                Uri.parse("content://com.android.externalstorage.documents/tree/primary"))
-        }
-        folderOpenLauncher.launch(intent)
+        folderOpenLauncher.launch(
+            Uri.parse("content://com.android.externalstorage.documents/tree/primary"))
     }
 
     @SuppressLint("SetTextI18n")
@@ -260,12 +252,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun saveCurrentFileAs() {
-        val intent = Intent(Intent.ACTION_CREATE_DOCUMENT).apply {
-            addCategory(Intent.CATEGORY_OPENABLE)
-            type = "*/*"
-            putExtra(Intent.EXTRA_TITLE, editorEngine.getActiveTab()?.title ?: "Untitled.txt")
-        }
-        saveFileLauncher.launch(intent)
+        saveFileLauncher.launch(
+            editorEngine.getActiveTab()?.title ?: "Untitled.txt")
     }
 
     private fun runCurrentFile() {
@@ -431,20 +419,20 @@ class MainActivity : AppCompatActivity() {
         for (token in tokens) {
             if (token.start >= content.length || token.end > content.length) continue
             val color = when (token.type) {
-                SyntaxTokenType.KEYWORD -> Color.parseColor("#569CD6")
-                SyntaxTokenType.STRING -> Color.parseColor("#CE9178")
-                SyntaxTokenType.COMMENT -> Color.parseColor("#6A9955")
-                SyntaxTokenType.NUMBER -> Color.parseColor("#B5CEA8")
-                SyntaxTokenType.TYPE -> Color.parseColor("#4EC9B0")
-                SyntaxTokenType.FUNCTION -> Color.parseColor("#DCDCAA")
-                SyntaxTokenType.VARIABLE -> Color.parseColor("#9CDCFE")
-                SyntaxTokenType.CONSTANT -> Color.parseColor("#569CD6")
-                SyntaxTokenType.OPERATOR -> Color.parseColor("#D4D4D4")
-                SyntaxTokenType.CLASS_NAME -> Color.parseColor("#4EC9B0")
-                SyntaxTokenType.TAG -> Color.parseColor("#569CD6")
-                SyntaxTokenType.ATTRIBUTE_NAME -> Color.parseColor("#9CDCFE")
-                SyntaxTokenType.ATTRIBUTE_VALUE -> Color.parseColor("#CE9178")
-                SyntaxTokenType.PROPERTY -> Color.parseColor("#9CDCFE")
+                VSCodeApp.SyntaxTokenTypeKEYWORD -> Color.parseColor("#569CD6")
+                VSCodeApp.SyntaxTokenTypeSTRING -> Color.parseColor("#CE9178")
+                VSCodeApp.SyntaxTokenTypeCOMMENT -> Color.parseColor("#6A9955")
+                VSCodeApp.SyntaxTokenTypeNUMBER -> Color.parseColor("#B5CEA8")
+                VSCodeApp.SyntaxTokenTypeTYPE -> Color.parseColor("#4EC9B0")
+                VSCodeApp.SyntaxTokenTypeFUNCTION -> Color.parseColor("#DCDCAA")
+                VSCodeApp.SyntaxTokenTypeVARIABLE -> Color.parseColor("#9CDCFE")
+                VSCodeApp.SyntaxTokenTypeCONSTANT -> Color.parseColor("#569CD6")
+                VSCodeApp.SyntaxTokenTypeOPERATOR -> Color.parseColor("#D4D4D4")
+                VSCodeApp.SyntaxTokenTypeCLASS_NAME -> Color.parseColor("#4EC9B0")
+                VSCodeApp.SyntaxTokenTypeTAG -> Color.parseColor("#569CD6")
+                VSCodeApp.SyntaxTokenTypeATTRIBUTE_NAME -> Color.parseColor("#9CDCFE")
+                VSCodeApp.SyntaxTokenTypeATTRIBUTE_VALUE -> Color.parseColor("#CE9178")
+                VSCodeApp.SyntaxTokenTypePROPERTY -> Color.parseColor("#9CDCFE")
                 else -> Color.parseColor("#D4D4D4")
             }
             try {
