@@ -38,7 +38,7 @@
     </style>
 
     <!-- Activity Bar Button Style -->
-    <style name="Widget.VSCode.ActivityBarButton" parent="Widget.Material3.Button.IconButton">
+    <style name="Widget.VSCode.ActivityBarButton">
         <item name="android:background">@android:color/transparent</item>
         <item name="android:tint">@color/activity_bar_inactive_foreground</item>
         <item name="android:padding">8dp</item>
@@ -47,7 +47,7 @@
     </style>
 
     <!-- Status Bar Item Style -->
-    <style name="Widget.VSCode.StatusBarItem" parent="Widget.Material3.Button.TextButton">
+    <style name="Widget.VSCode.StatusBarItem">
         <item name="android:background">@android:color/transparent</item>
         <item name="android:textColor">@color/status_bar_foreground</item>
         <item name="android:textSize">12sp</item>
@@ -58,7 +58,7 @@
     </style>
 
     <!-- Tab Style -->
-    <style name="Widget.VSCode.Tab" parent="Widget.Material3.Button.TextButton">
+    <style name="Widget.VSCode.Tab">
         <item name="android:background">@color/tab_inactive_background</item>
         <item name="android:textColor">@color/tab_inactive_foreground</item>
         <item name="android:textSize">13sp</item>
@@ -70,7 +70,7 @@
     </style>
 
     <!-- Panel Title Style -->
-    <style name="Widget.VSCode.PanelTitle" parent="Widget.Material3.Button.TextButton">
+    <style name="Widget.VSCode.PanelTitle">
         <item name="android:background">@android:color/transparent</item>
         <item name="android:textColor">@color/panel_title_inactive_foreground</item>
         <item name="android:textSize">11sp</item>
@@ -117,7 +117,7 @@
     </style>
 
     <!-- Dialog Style -->
-    <style name="Widget.VSCode.Dialog" parent="ThemeOverlay.Material3.Dialog">
+    <style name="Widget.VSCode.Dialog" parent="ThemeOverlay.Material3.Dark">
         <item name="android:background">@color/dropdown_background</item>
         <item name="colorSurface">@color/dropdown_background</item>
         <item name="colorOnSurface">@color/text_primary</item>
