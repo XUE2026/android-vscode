@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -31,7 +32,7 @@
                 android:layout_height="48dp"
                 android:src="@android:drawable/ic_menu_manage"
                 android:background="@android:color/transparent"
-                android:tint="@color/activity_bar_active_foreground"
+                app:tint="@color/activity_bar_active_foreground"
                 android:contentDescription="@string/activity_bar_explorer"
                 android:scaleType="center"
                 android:padding="12dp" />
@@ -43,7 +44,7 @@
                 android:layout_height="48dp"
                 android:src="@android:drawable/ic_menu_search"
                 android:background="@android:color/transparent"
-                android:tint="@color/activity_bar_inactive_foreground"
+                app:tint="@color/activity_bar_inactive_foreground"
                 android:contentDescription="@string/activity_bar_search"
                 android:scaleType="center"
                 android:padding="12dp" />
@@ -55,7 +56,7 @@
                 android:layout_height="48dp"
                 android:src="@android:drawable/ic_menu_sort_by_size"
                 android:background="@android:color/transparent"
-                android:tint="@color/activity_bar_inactive_foreground"
+                app:tint="@color/activity_bar_inactive_foreground"
                 android:contentDescription="@string/activity_bar_source_control"
                 android:scaleType="center"
                 android:padding="12dp" />
@@ -67,7 +68,7 @@
                 android:layout_height="48dp"
                 android:src="@android:drawable/ic_menu_add"
                 android:background="@android:color/transparent"
-                android:tint="@color/activity_bar_inactive_foreground"
+                app:tint="@color/activity_bar_inactive_foreground"
                 android:contentDescription="@string/activity_bar_extensions"
                 android:scaleType="center"
                 android:padding="12dp" />
@@ -85,7 +86,7 @@
                 android:layout_height="48dp"
                 android:src="@android:drawable/ic_media_play"
                 android:background="@android:color/transparent"
-                android:tint="@color/activity_bar_inactive_foreground"
+                app:tint="@color/activity_bar_inactive_foreground"
                 android:contentDescription="@string/activity_bar_debug"
                 android:scaleType="center"
                 android:padding="12dp" />
@@ -97,7 +98,7 @@
                 android:layout_height="48dp"
                 android:src="@android:drawable/ic_menu_preferences"
                 android:background="@android:color/transparent"
-                android:tint="@color/activity_bar_inactive_foreground"
+                app:tint="@color/activity_bar_inactive_foreground"
                 android:contentDescription="@string/menu_settings"
                 android:scaleType="center"
                 android:padding="12dp" />
@@ -148,7 +149,7 @@
                         android:layout_height="28dp"
                         android:src="@android:drawable/ic_menu_close_clear_cancel"
                         android:background="@android:color/transparent"
-                        android:tint="@color/activity_bar_inactive_foreground"
+                        app:tint="@color/activity_bar_inactive_foreground"
                         android:contentDescription="@string/close"
                         android:scaleType="center"
                         android:padding="4dp" />
@@ -220,7 +221,7 @@
                         android:layout_height="28dp"
                         android:src="@android:drawable/ic_menu_more"
                         android:background="@android:color/transparent"
-                        android:tint="@color/activity_bar_inactive_foreground"
+                        app:tint="@color/activity_bar_inactive_foreground"
                         android:scaleType="center"
                         android:padding="4dp" />
                 </LinearLayout>
@@ -332,7 +333,7 @@
                 android:layout_height="28dp"
                 android:src="@android:drawable/ic_menu_close_clear_cancel"
                 android:background="@android:color/transparent"
-                android:tint="@color/activity_bar_inactive_foreground"
+                app:tint="@color/activity_bar_inactive_foreground"
                 android:contentDescription="@string/close"
                 android:scaleType="center"
                 android:padding="4dp" />
