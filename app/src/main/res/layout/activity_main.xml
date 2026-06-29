@@ -25,7 +25,7 @@
             android:background="?attr/selectableItemBackgroundBorderless"
             android:scaleType="center"
             android:contentDescription="Menu"
-            android:tint="@color/activity_bar_inactive_foreground" />
+            app:tint="@color/activity_bar_inactive_foreground" />
 
         <TextView
             android:id="@+id/toolbar_title"
@@ -49,7 +49,7 @@
             android:background="?attr/selectableItemBackgroundBorderless"
             android:scaleType="center"
             android:contentDescription="Save"
-            android:tint="@color/activity_bar_inactive_foreground" />
+            app:tint="@color/activity_bar_inactive_foreground" />
 
         <ImageButton
             android:id="@+id/toolbar_run"
@@ -59,7 +59,7 @@
             android:background="?attr/selectableItemBackgroundBorderless"
             android:scaleType="center"
             android:contentDescription="Run"
-            android:tint="@color/accent_green" />
+            app:tint="@color/accent_green" />
 
         <ImageButton
             android:id="@+id/toolbar_search"
@@ -69,7 +69,7 @@
             android:background="?attr/selectableItemBackgroundBorderless"
             android:scaleType="center"
             android:contentDescription="Search"
-            android:tint="@color/activity_bar_inactive_foreground" />
+            app:tint="@color/activity_bar_inactive_foreground" />
 
         <ImageButton
             android:id="@+id/toolbar_more"
@@ -79,7 +79,7 @@
             android:background="?attr/selectableItemBackgroundBorderless"
             android:scaleType="center"
             android:contentDescription="More"
-            android:tint="@color/activity_bar_inactive_foreground" />
+            app:tint="@color/activity_bar_inactive_foreground" />
     </LinearLayout>
 
     <!-- Tab bar -->
@@ -238,7 +238,7 @@
                 android:src="@drawable/ic_add"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:scaleType="center"
-                android:tint="@color/activity_bar_inactive_foreground"
+                app:tint="@color/activity_bar_inactive_foreground"
                 android:contentDescription="New Terminal" />
 
             <ImageButton
@@ -248,7 +248,7 @@
                 android:src="@drawable/ic_close"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:scaleType="center"
-                android:tint="@color/activity_bar_inactive_foreground"
+                app:tint="@color/activity_bar_inactive_foreground"
                 android:contentDescription="Close Panel" />
         </LinearLayout>
 
