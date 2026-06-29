@@ -76,7 +76,7 @@ data class PluginLoadResult(
 data class PluginDependencyNode(
     val pluginId: String,
     val version: String,
-    val resolved: Boolean = false,
+    var resolved: Boolean = false,
     val dependencies: MutableList<PluginDependencyNode> = mutableListOf()
 )
 

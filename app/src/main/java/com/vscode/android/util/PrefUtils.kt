@@ -478,8 +478,10 @@ object PrefUtils {
 
     private fun setupGlobalListener() {
         val globalListener = SharedPreferences.OnSharedPreferenceChangeListener { _, key ->
-            val value = preferences.all[key]
-            listeners.forEach { it.onPreferenceChanged(key, value) }
+            if (key != null) {
+                val value = preferences.all[key]
+                listeners.forEach { it.onPreferenceChanged(key, value) }
+            }
         }
         preferences.registerOnSharedPreferenceChangeListener(globalListener)
     }

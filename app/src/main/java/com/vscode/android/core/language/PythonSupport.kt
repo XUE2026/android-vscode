@@ -485,19 +485,19 @@ class PythonSupport(private val context: Context) : CompletionProvider, HoverPro
 
         val COMMON_SNIPPETS = listOf(
             SnippetInfo("if __name__ == '__main__'", "if __name__ == '__main__':\n    ", "Main guard"),
-            SnippetInfo("def", "def ${1:name}(${2:args}):\n    ${3:pass}", "Define function"),
-            SnippetInfo("class", "class ${1:ClassName}(${2:object}):\n    def __init__(self${3:}):\n        ${4:pass}", "Define class"),
-            SnippetInfo("for", "for ${1:item} in ${2:iterable}:\n    ${3:pass}", "For loop"),
-            SnippetInfo("try/except", "try:\n    ${1:pass}\nexcept ${2:Exception} as ${3:e}:\n    ${4:pass}", "Try-except block"),
-            SnippetInfo("with", "with ${1:expression} as ${2:target}:\n    ${3:pass}", "With statement"),
-            SnippetInfo("import", "import ${1:module}", "Import module"),
-            SnippetInfo("from", "from ${1:module} import ${2:name}", "Import from module"),
-            SnippetInfo("list comprehension", "[${1:expr} for ${2:item} in ${3:iterable}]", "List comprehension"),
-            SnippetInfo("dict comprehension", "{${1:key}: ${2:value} for ${3:item} in ${4:iterable}}", "Dictionary comprehension"),
-            SnippetInfo("lambda", "lambda ${1:args}: ${2:expr}", "Lambda expression"),
-            SnippetInfo("property", "@property\ndef ${1:name}(self):\n    return self.${2:_name}", "Property decorator"),
-            SnippetInfo("print", "print(${1:value})", "Print statement"),
-            SnippetInfo("f-string", "f\"${1:text}\"", "Formatted string")
+            SnippetInfo("def", "def \${1:name}(\${2:args}):\n    \${3:pass}", "Define function"),
+            SnippetInfo("class", "class \${1:ClassName}(\${2:object}):\n    def __init__(self\${3:}):\n        \${4:pass}", "Define class"),
+            SnippetInfo("for", "for \${1:item} in \${2:iterable}:\n    \${3:pass}", "For loop"),
+            SnippetInfo("try/except", "try:\n    \${1:pass}\nexcept \${2:Exception} as \${3:e}:\n    \${4:pass}", "Try-except block"),
+            SnippetInfo("with", "with \${1:expression} as \${2:target}:\n    \${3:pass}", "With statement"),
+            SnippetInfo("import", "import \${1:module}", "Import module"),
+            SnippetInfo("from", "from \${1:module} import \${2:name}", "Import from module"),
+            SnippetInfo("list comprehension", "[\${1:expr} for \${2:item} in \${3:iterable}]", "List comprehension"),
+            SnippetInfo("dict comprehension", "{\${1:key}: \${2:value} for \${3:item} in \${4:iterable}}", "Dictionary comprehension"),
+            SnippetInfo("lambda", "lambda \${1:args}: \${2:expr}", "Lambda expression"),
+            SnippetInfo("property", "@property\ndef \${1:name}(self):\n    return self.\${2:_name}", "Property decorator"),
+            SnippetInfo("print", "print(\${1:value})", "Print statement"),
+            SnippetInfo("f-string", "f\"\${1:text}\"", "Formatted string")
         )
     }
 }

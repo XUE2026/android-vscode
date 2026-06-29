@@ -181,7 +181,7 @@ class CodeEditor @JvmOverloads constructor(
         }
     }
 
-    fun getLineCount(): Int {
+    override fun getLineCount(): Int {
         return layout?.lineCount ?: (text?.toString()?.lines()?.size ?: 1)
     }
 

@@ -6,6 +6,7 @@ import android.util.AttributeSet
 import android.view.Gravity
 import android.view.View
 import android.view.ViewGroup
+import android.view.inputmethod.EditorInfo
 import android.widget.EditText
 import android.widget.LinearLayout
 import android.widget.ScrollView
@@ -93,7 +94,7 @@ class ExtensionPanel @JvmOverloads constructor(
                 setMargins(dpToPx(8), dpToPx(8), dpToPx(8), dpToPx(4))
             }
             setOnEditorActionListener { _, actionId, _ ->
-                if (actionId == android.view.inputmethod.EditorAction.IME_ACTION_SEARCH) {
+                if (actionId == EditorInfo.IME_ACTION_SEARCH) {
                     onSearchListener?.invoke(text.toString().trim())
                     true
                 } else false

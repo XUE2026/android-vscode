@@ -360,7 +360,7 @@ class TerminalManager(private val context: Context) {
             val parsed = ansiParser.parse(text)
             outputBuffer.append(parsed)
 
-            val lines = parsed.split("\n", keepDelimiter = false)
+            val lines = parsed.toString().lines()
             for (line in lines) {
                 if (line.isNotEmpty()) {
                     outputLines.add(line)

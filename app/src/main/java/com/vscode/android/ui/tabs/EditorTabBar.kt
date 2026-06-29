@@ -77,7 +77,7 @@ class EditorTabBar @JvmOverloads constructor(
         tabPadding = dpToPx(12)
 
         tabsContainer = LinearLayout(context).apply {
-            orientation = HORIZONTAL
+            orientation = LinearLayout.HORIZONTAL
             layoutParams = LayoutParams(
                 ViewGroup.LayoutParams.WRAP_CONTENT,
                 ViewGroup.LayoutParams.MATCH_PARENT
@@ -99,7 +99,7 @@ class EditorTabBar @JvmOverloads constructor(
         }
 
         val wrapper = LinearLayout(context).apply {
-            orientation = HORIZONTAL
+            orientation = LinearLayout.HORIZONTAL
             layoutParams = LayoutParams(
                 ViewGroup.LayoutParams.WRAP_CONTENT,
                 ViewGroup.LayoutParams.MATCH_PARENT

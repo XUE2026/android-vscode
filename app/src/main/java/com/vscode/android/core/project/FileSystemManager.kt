@@ -7,6 +7,8 @@ import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import kotlin.comparisons.compareBy
+import kotlin.comparisons.thenBy
 import java.io.File
 import java.io.FileInputStream
 import java.io.FileOutputStream
@@ -421,7 +423,7 @@ class FileSystemManager(private val context: Context) {
             watchedDirs[directoryPath] = directoryPath
 
             val job = scope.launch {
-                while (isActive) {
+                while (isValid) {
                     try {
                         val key = watchService.poll(1, TimeUnit.SECONDS) ?: continue
                         for (event in key.pollEvents()) {

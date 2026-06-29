@@ -428,21 +428,21 @@ class JavaSupport(private val context: Context) : CompletionProvider, HoverProvi
         )
 
         val COMMON_SNIPPETS = listOf(
-            SnippetInfo("main", "public static void main(String[] args) {\n    ${1:// code}\n}", "Main method"),
-            SnippetInfo("class", "public class ${1:ClassName} {\n    ${2:// code}\n}", "Class definition"),
-            SnippetInfo("interface", "public interface ${1:InterfaceName} {\n    ${2:// methods}\n}", "Interface definition"),
-            SnippetInfo("for", "for (int ${1:i} = ${2:0}; ${1:i} < ${3:max}; ${1:i}++) {\n    ${4:// code}\n}", "For loop"),
-            SnippetInfo("foreach", "for (${1:Type} ${2:item} : ${3:collection}) {\n    ${4:// code}\n}", "Enhanced for loop"),
-            SnippetInfo("if", "if (${1:condition}) {\n    ${2:// code}\n}", "If statement"),
-            SnippetInfo("ifelse", "if (${1:condition}) {\n    ${2:// code}\n} else {\n    ${3:// code}\n}", "If-else statement"),
-            SnippetInfo("try", "try {\n    ${1:// code}\n} catch (${2:Exception} ${3:e}) {\n    ${4:// handle}\n}", "Try-catch block"),
-            SnippetInfo("sout", "System.out.println(${1:});", "Print to console"),
-            SnippetInfo("soutf", "System.out.printf(\"${1:%s}%n\", ${2:args});", "Formatted print"),
-            SnippetInfo("getset", "public ${1:Type} get${2:Property}() {\n    return ${3:field};\n}\n\npublic void set${2:Property}(${1:Type} ${3:field}) {\n    this.${3:field} = ${3:field};\n}", "Getter and setter"),
-            SnippetInfo("equals", "@Override\npublic boolean equals(Object o) {\n    if (this == o) return true;\n    if (o == null || getClass() != o.getClass()) return false;\n    ${1:ClassName} that = (${1:ClassName}) o;\n    return ${2:true};\n}", "Equals method"),
-            SnippetInfo("hashCode", "@Override\npublic int hashCode() {\n    return Objects.hash(${1:fields});\n}", "HashCode method"),
-            SnippetInfo("lambda", "(${1:params}) -> ${2:expression}", "Lambda expression"),
-            SnippetInfo("stream", "${1:collection}.stream().${2:map}(${3:e -> e})${4:}", "Stream operation")
+            SnippetInfo("main", "public static void main(String[] args) {\n    \${1:// code}\n}", "Main method"),
+            SnippetInfo("class", "public class \${1:ClassName} {\n    \${2:// code}\n}", "Class definition"),
+            SnippetInfo("interface", "public interface \${1:InterfaceName} {\n    \${2:// methods}\n}", "Interface definition"),
+            SnippetInfo("for", "for (int \${1:i} = \${2:0}; \${1:i} < \${3:max}; \${1:i}++) {\n    \${4:// code}\n}", "For loop"),
+            SnippetInfo("foreach", "for (\${1:Type} \${2:item} : \${3:collection}) {\n    \${4:// code}\n}", "Enhanced for loop"),
+            SnippetInfo("if", "if (\${1:condition}) {\n    \${2:// code}\n}", "If statement"),
+            SnippetInfo("ifelse", "if (\${1:condition}) {\n    \${2:// code}\n} else {\n    \${3:// code}\n}", "If-else statement"),
+            SnippetInfo("try", "try {\n    \${1:// code}\n} catch (\${2:Exception} \${3:e}) {\n    \${4:// handle}\n}", "Try-catch block"),
+            SnippetInfo("sout", "System.out.println(\${1:});", "Print to console"),
+            SnippetInfo("soutf", "System.out.printf(\"\${1:%s}%n\", \${2:args});", "Formatted print"),
+            SnippetInfo("getset", "public \${1:Type} get\${2:Property}() {\n    return \${3:field};\n}\n\npublic void set\${2:Property}(\${1:Type} \${3:field}) {\n    this.\${3:field} = \${3:field};\n}", "Getter and setter"),
+            SnippetInfo("equals", "@Override\npublic boolean equals(Object o) {\n    if (this == o) return true;\n    if (o == null || getClass() != o.getClass()) return false;\n    \${1:ClassName} that = (\${1:ClassName}) o;\n    return \${2:true};\n}", "Equals method"),
+            SnippetInfo("hashCode", "@Override\npublic int hashCode() {\n    return Objects.hash(\${1:fields});\n}", "HashCode method"),
+            SnippetInfo("lambda", "(\${1:params}) -> \${2:expression}", "Lambda expression"),
+            SnippetInfo("stream", "\${1:collection}.stream().\${2:map}(\${3:e -> e})\${4:}", "Stream operation")
         )
     }
 }

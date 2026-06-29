@@ -396,7 +396,7 @@ data class ProjectInfo(
     val name: String,
     val rootPath: String,
     val isOpen: Boolean = false,
-    val settings: MutableMap<String, Any> = mutableMapOf()
+    var settings: MutableMap<String, Any> = mutableMapOf()
 )
 
 data class BuildConfiguration(
