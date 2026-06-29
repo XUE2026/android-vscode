@@ -5,6 +5,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.delay
+import kotlinx.coroutines.isActive
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import kotlin.comparisons.compareBy
@@ -184,7 +185,7 @@ class FileSystemManager(private val context: Context) {
         )
 
         if (dir.isDirectory) {
-            val children = dir.listFiles()?.filter { showHidden || !it.isHidden } ?: emptyArray<File>()
+            val children = dir.listFiles()?.filter { showHidden || !it.isHidden } ?: emptyList()
             node.children = children
                 .sortedWith(compareBy<File> { !it.isDirectory }.thenBy { it.name.lowercase() })
                 .map { buildFileTree(it, showHidden) }

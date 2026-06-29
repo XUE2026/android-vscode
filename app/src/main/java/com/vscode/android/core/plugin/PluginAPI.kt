@@ -359,7 +359,7 @@ class FileSystemAPIImpl(private val context: Context) : FileSystemAPI {
             parentPath = dir.parent
         )
         if (dir.isDirectory) {
-            val children = dir.listFiles()?.filter { !it.isHidden } ?: emptyArray<File>()
+            val children = dir.listFiles()?.filter { !it.isHidden } ?: emptyList()
             node.children = children
                 .sortedWith(compareBy<File> { !it.isDirectory }.thenBy { it.name.lowercase() })
                 .map { buildFileTree(it) }
