@@ -12,7 +12,7 @@ on:
 jobs:
   lint:
     runs-on: ubuntu-latest
-    timeout-minutes: 3
+    timeout-minutes: 10
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -37,7 +37,7 @@ jobs:
           ANDROID_HOME: /usr/local/lib/android/sdk
 
       - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v3
+        uses: gradle/actions/setup-gradle@v4
 
       - name: Run lint
         run: gradle lint
@@ -49,7 +49,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: lint-results
-          path: app/build/reports/lint-results*.html
+          path: |
+            app/build/reports/lint-results*.html
+            app/build/reports/lint-results*.xml
 
   build:
     runs-on: ubuntu-latest
@@ -88,7 +90,7 @@ jobs:
             gradle-${{ runner.os }}-
 
       - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v3
+        uses: gradle/actions/setup-gradle@v4
 
       - name: Build debug APK
         run: gradle assembleDebug
@@ -111,13 +113,6 @@ jobs:
         with:
           name: release-apk
           path: app/build/outputs/apk/release/*.apk
-
-      - name: Upload lint results
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: lint-results
-          path: app/build/reports/lint-results*.html
 
       - name: Upload test results
         if: always()
