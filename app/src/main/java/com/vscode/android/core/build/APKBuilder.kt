@@ -17,6 +17,7 @@ import java.io.FileInputStream
 import java.io.InputStreamReader
 import java.security.MessageDigest
 import java.util.UUID
+import com.vscode.android.core.build.BuildSystem.BuildResult
 import java.util.jar.JarFile
 import java.util.zip.ZipFile
 

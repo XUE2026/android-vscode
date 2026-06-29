@@ -44,6 +44,10 @@ class BuildSystem {
         }
     }
 
+    private fun detectBuildSystemFromSource(root: File): BuildType {
+        return BuildType.CUSTOM
+    }
+
     fun detectBuildConfigurations(projectRoot: String): List<BuildConfiguration> {
         val configs = mutableListOf<BuildConfiguration>()
         val root = File(projectRoot)

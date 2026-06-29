@@ -707,7 +707,7 @@ class I18nManager(private val context: Context) {
             "search.whole_word" to "全词匹配",
             "search.regex" to "使用正则表达式",
             "search.no_results" to "未找到结果。",
-            "search.result_count" to "在 %2$d 个文件中找到 %1$d 个结果",
+            "search.result_count" to "在 %2\$d 个文件中找到 %1\$d 个结果",
             "search.result_count_single" to "在 1 个文件中找到 %d 个结果",
             "search.replaced_count" to "已替换 %d 处",
 
@@ -933,7 +933,7 @@ class I18nManager(private val context: Context) {
             "search.whole_word" to "単語単位",
             "search.regex" to "正規表現",
             "search.no_results" to "結果が見つかりません。",
-            "search.result_count" to "%2$d ファイル中 %1$d 件の結果",
+            "search.result_count" to "%2\$d ファイル中 %1\$d 件の結果",
             "search.replaced_count" to "%d 件置換しました",
 
             "scm.changes" to "変更",

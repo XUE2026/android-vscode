@@ -909,8 +909,8 @@ class MainActivity : AppCompatActivity() {
             isSingleLine = true
             inputType = android.text.InputType.TYPE_CLASS_TEXT
             setOnEditorActionListener { _, actionId, _ ->
-                if (actionId == android.view.inputmethod.EditorAction.IME_ACTION_SEND ||
-                    actionId == android.view.inputmethod.EditorAction.IME_ACTION_DONE) {
+                if (actionId == android.view.inputmethod.EditorInfo.IME_ACTION_SEND ||
+                    actionId == android.view.inputmethod.EditorInfo.IME_ACTION_DONE) {
                     val command = text.toString()
                     if (command.isNotBlank()) {
                         executeTerminalCommand(command)

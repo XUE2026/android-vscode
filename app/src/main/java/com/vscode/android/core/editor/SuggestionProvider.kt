@@ -1,6 +1,8 @@
 package com.vscode.android.core.editor
 
 import java.io.File
+import kotlin.comparisons.compareBy
+import kotlin.comparisons.thenBy
 
 class SuggestionProvider {
 
@@ -153,7 +155,7 @@ class SuggestionProvider {
                     it.name.startsWith(searchPrefix) && !it.isHidden
                 } ?: return suggestions
 
-                for (file in files.sortedBy { !it.isDirectory }.thenBy { it.name }) {
+                for (file in files.sortedWith(compareBy<File> { !it.isDirectory }.thenBy { it.name })) {
                     val relativePath = file.relativeTo(parentDir).path
                     val displayPath = if (file.isDirectory) "$relativePath/" else relativePath
                     suggestions.add(Suggestion(

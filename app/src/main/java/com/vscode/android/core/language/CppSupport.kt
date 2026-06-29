@@ -527,25 +527,25 @@ class CppSupport(private val context: Context) : CompletionProvider, HoverProvid
         )
 
         val COMMON_SNIPPETS = listOf(
-            SnippetInfo("include", "#include ${1:<header>}", "Include header"),
-            SnippetInfo("main", "int main(int argc, char* argv[]) {\n    ${1:// code}\n    return 0;\n}", "Main function"),
-            SnippetInfo("class", "class ${1:ClassName} {\npublic:\n    ${2:// members}\nprivate:\n    ${3:// members}\n};", "Class definition"),
-            SnippetInfo("struct", "struct ${1:StructName} {\n    ${2:// members}\n};", "Struct definition"),
-            SnippetInfo("for", "for (int ${1:i} = ${2:0}; ${1:i} < ${3:n}; ++${1:i}) {\n    ${4:// code}\n}", "For loop"),
-            SnippetInfo("foreach", "for (const auto& ${1:item} : ${2:container}) {\n    ${3:// code}\n}", "Range-based for loop"),
-            SnippetInfo("if", "if (${1:condition}) {\n    ${2:// code}\n}", "If statement"),
-            SnippetInfo("ifelse", "if (${1:condition}) {\n    ${2:// code}\n} else {\n    ${3:// code}\n}", "If-else statement"),
-            SnippetInfo("while", "while (${1:condition}) {\n    ${2:// code}\n}", "While loop"),
-            SnippetInfo("switch", "switch (${1:expr}) {\ncase ${2:val}:\n    ${3:// code}\n    break;\ndefault:\n    ${4:// code}\n    break;\n}", "Switch statement"),
-            SnippetInfo("try", "try {\n    ${1:// code}\n} catch (const ${2:std::exception}& ${3:e}) {\n    ${4:// handle}\n}", "Try-catch block"),
-            SnippetInfo("lambda", "[${1:capture}](${2:params}) -> ${3:return_type} {\n    ${4:// body}\n}", "Lambda expression"),
-            SnippetInfo("cout", "std::cout << ${1:value} << std::endl;", "Print to console"),
-            SnippetInfo("vector", "std::vector<${1:Type}> ${2:vec};", "Vector declaration"),
-            SnippetInfo("map", "std::map<${1:KeyType}, ${2:ValueType}> ${3:map};", "Map declaration"),
-            SnippetInfo("shared_ptr", "auto ${1:ptr} = std::make_shared<${2:Type}>(${3:args});", "Shared pointer"),
-            SnippetInfo("unique_ptr", "auto ${1:ptr} = std::make_unique<${2:Type}>(${3:args});", "Unique pointer"),
-            SnippetInfo("template", "template<typename ${1:T}>\n${2:declaration}", "Template declaration"),
-            SnippetInfo("namespace", "namespace ${1:name} {\n    ${2:// code}\n}", "Namespace")
+            SnippetInfo("include", "#include \${1:<header>}", "Include header"),
+            SnippetInfo("main", "int main(int argc, char* argv[]) {\n    \${1:// code}\n    return 0;\n}", "Main function"),
+            SnippetInfo("class", "class \${1:ClassName} {\npublic:\n    \${2:// members}\nprivate:\n    \${3:// members}\n};", "Class definition"),
+            SnippetInfo("struct", "struct \${1:StructName} {\n    \${2:// members}\n};", "Struct definition"),
+            SnippetInfo("for", "for (int \${1:i} = \${2:0}; \${1:i} < \${3:n}; ++\${1:i}) {\n    \${4:// code}\n}", "For loop"),
+            SnippetInfo("foreach", "for (const auto& \${1:item} : \${2:container}) {\n    \${3:// code}\n}", "Range-based for loop"),
+            SnippetInfo("if", "if (\${1:condition}) {\n    \${2:// code}\n}", "If statement"),
+            SnippetInfo("ifelse", "if (\${1:condition}) {\n    \${2:// code}\n} else {\n    \${3:// code}\n}", "If-else statement"),
+            SnippetInfo("while", "while (\${1:condition}) {\n    \${2:// code}\n}", "While loop"),
+            SnippetInfo("switch", "switch (\${1:expr}) {\ncase \${2:val}:\n    \${3:// code}\n    break;\ndefault:\n    \${4:// code}\n    break;\n}", "Switch statement"),
+            SnippetInfo("try", "try {\n    \${1:// code}\n} catch (const \${2:std::exception}& \${3:e}) {\n    \${4:// handle}\n}", "Try-catch block"),
+            SnippetInfo("lambda", "[\${1:capture}](\${2:params}) -> \${3:return_type} {\n    \${4:// body}\n}", "Lambda expression"),
+            SnippetInfo("cout", "std::cout << \${1:value} << std::endl;", "Print to console"),
+            SnippetInfo("vector", "std::vector<\${1:Type}> \${2:vec};", "Vector declaration"),
+            SnippetInfo("map", "std::map<\${1:KeyType}, \${2:ValueType}> \${3:map};", "Map declaration"),
+            SnippetInfo("shared_ptr", "auto \${1:ptr} = std::make_shared<\${2:Type}>(\${3:args});", "Shared pointer"),
+            SnippetInfo("unique_ptr", "auto \${1:ptr} = std::make_unique<\${2:Type}>(\${3:args});", "Unique pointer"),
+            SnippetInfo("template", "template<typename \${1:T}>\n\${2:declaration}", "Template declaration"),
+            SnippetInfo("namespace", "namespace \${1:name} {\n    \${2:// code}\n}", "Namespace")
         )
     }
 }
