@@ -2,43 +2,30 @@
 <resources>
     <!-- Base VS Code Dark Theme (Material3) -->
     <style name="Theme.AndroidVSCode" parent="Theme.Material3.Dark.NoActionBar">
-        <!-- Primary colors -->
         <item name="colorPrimary">@color/accent_blue</item>
         <item name="colorPrimaryVariant">@color/accent_light_blue</item>
         <item name="colorOnPrimary">@color/button_foreground</item>
-
-        <!-- Secondary colors -->
         <item name="colorSecondary">@color/accent_cyan</item>
         <item name="colorSecondaryVariant">@color/accent_cyan</item>
         <item name="colorOnSecondary">@color/background</item>
-
-        <!-- Background -->
         <item name="android:colorBackground">@color/background</item>
         <item name="colorSurface">@color/background</item>
         <item name="colorOnSurface">@color/text_primary</item>
-
-        <!-- Error -->
         <item name="colorError">@color/accent_red</item>
         <item name="colorOnError">@color/button_foreground</item>
-
-        <!-- Status bar and navigation bar -->
         <item name="android:statusBarColor">@color/status_bar_background</item>
         <item name="android:navigationBarColor">@color/background</item>
         <item name="android:windowLightStatusBar">false</item>
         <item name="android:windowBackground">@color/background</item>
-
-        <!-- No action bar -->
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
     </style>
 
-    <!-- VS Code Splash Theme -->
     <style name="Theme.AndroidVSCode.Splash" parent="Theme.AndroidVSCode">
         <item name="android:windowBackground">@color/background</item>
     </style>
 
-    <!-- Activity Bar Button Style -->
-    <style name="Widget.VSCode.ActivityBarButton">
+    <style name="VSCodeActivityBarButton">
         <item name="android:background">@android:color/transparent</item>
         <item name="android:tint">@color/activity_bar_inactive_foreground</item>
         <item name="android:padding">8dp</item>
@@ -46,8 +33,7 @@
         <item name="android:layout_height">48dp</item>
     </style>
 
-    <!-- Status Bar Item Style -->
-    <style name="Widget.VSCode.StatusBarItem">
+    <style name="VSCodeStatusBarItem">
         <item name="android:background">@android:color/transparent</item>
         <item name="android:textColor">@color/status_bar_foreground</item>
         <item name="android:textSize">12sp</item>
@@ -57,8 +43,7 @@
         <item name="android:minHeight">0dp</item>
     </style>
 
-    <!-- Tab Style -->
-    <style name="Widget.VSCode.Tab">
+    <style name="VSCodeTab">
         <item name="android:background">@color/tab_inactive_background</item>
         <item name="android:textColor">@color/tab_inactive_foreground</item>
         <item name="android:textSize">13sp</item>
@@ -69,8 +54,7 @@
         <item name="android:ellipsize">end</item>
     </style>
 
-    <!-- Panel Title Style -->
-    <style name="Widget.VSCode.PanelTitle">
+    <style name="VSCodePanelTitle">
         <item name="android:background">@android:color/transparent</item>
         <item name="android:textColor">@color/panel_title_inactive_foreground</item>
         <item name="android:textSize">11sp</item>
@@ -82,8 +66,7 @@
         <item name="android:minHeight">0dp</item>
     </style>
 
-    <!-- Sidebar Section Header -->
-    <style name="Widget.VSCode.SidebarSectionHeader">
+    <style name="VSCodeSidebarSectionHeader">
         <item name="android:textColor">@color/sidebar_section_header_foreground</item>
         <item name="android:textSize">11sp</item>
         <item name="android:textAllCaps">true</item>
@@ -94,8 +77,7 @@
         <item name="android:paddingBottom">4dp</item>
     </style>
 
-    <!-- Editor TextStyle -->
-    <style name="Widget.VSCode.Editor">
+    <style name="VSCodeEditor">
         <item name="android:textColor">@color/editor_foreground</item>
         <item name="android:background">@color/editor_background</item>
         <item name="android:textSize">14sp</item>
@@ -107,8 +89,7 @@
         <item name="android:paddingBottom">4dp</item>
     </style>
 
-    <!-- Terminal Style -->
-    <style name="Widget.VSCode.Terminal">
+    <style name="VSCodeTerminal">
         <item name="android:textColor">@color/terminal_foreground</item>
         <item name="android:background">@color/terminal_background</item>
         <item name="android:textSize">13sp</item>
@@ -116,21 +97,18 @@
         <item name="android:padding">4dp</item>
     </style>
 
-    <!-- Dialog Style -->
-    <style name="Widget.VSCode.Dialog" parent="ThemeOverlay.Material3.Dark">
+    <style name="VSCodeDialog">
         <item name="android:background">@color/dropdown_background</item>
         <item name="colorSurface">@color/dropdown_background</item>
         <item name="colorOnSurface">@color/text_primary</item>
     </style>
 
-    <!-- Toolbar / Top Bar Style -->
-    <style name="Widget.VSCode.Toolbar">
+    <style name="VSCodeToolbar">
         <item name="android:background">@color/tab_background</item>
         <item name="android:minHeight">36dp</item>
     </style>
 
-    <!-- Divider Style -->
-    <style name="Widget.VSCode.Divider">
+    <style name="VSCodeDivider">
         <item name="android:background">@color/divider</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">1dp</item>
