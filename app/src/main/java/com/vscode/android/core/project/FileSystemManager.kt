@@ -184,7 +184,7 @@ class FileSystemManager(private val context: Context) {
         )
 
         if (dir.isDirectory) {
-            val children = dir.listFiles()?.filter { showHidden || !it.isHidden } ?: emptyArray()
+            val children = dir.listFiles()?.filter { showHidden || !it.isHidden } ?: emptyArray<File>()
             node.children = children
                 .sortedWith(compareBy<File> { !it.isDirectory }.thenBy { it.name.lowercase() })
                 .map { buildFileTree(it, showHidden) }
@@ -423,7 +423,7 @@ class FileSystemManager(private val context: Context) {
             watchedDirs[directoryPath] = directoryPath
 
             val job = scope.launch {
-                while (isValid) {
+                while (isActive) {
                     try {
                         val key = watchService.poll(1, TimeUnit.SECONDS) ?: continue
                         for (event in key.pollEvents()) {
