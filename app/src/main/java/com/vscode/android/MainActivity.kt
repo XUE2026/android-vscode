@@ -70,7 +70,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        app = VSCodeApp.getInstance()
+        app = VSCodeApp.instance
         editorEngine = app.editorEngine
         projectManager = app.projectManager
         cursorManager = CursorManager()

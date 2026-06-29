@@ -914,7 +914,5 @@ class VSCodeApp : Application() {
 
         lateinit var instance: VSCodeApp
             private set
-
-        fun getInstance(): VSCodeApp = instance
     }
 }

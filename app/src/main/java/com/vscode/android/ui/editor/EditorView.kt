@@ -180,7 +180,7 @@ class EditorView @JvmOverloads constructor(
             if (text.isEmpty()) return@Runnable
 
             try {
-                val app = VSCodeApp.getInstance()
+                val app = VSCodeApp.instance
                 val tokens = app.editorEngine.highlightSyntax("")
                 if (tokens.isNotEmpty()) {
                     applySyntaxHighlighting(text, tokens)
@@ -233,7 +233,7 @@ class EditorView @JvmOverloads constructor(
         suggestionRunnable?.let { debounceHandler.removeCallbacks(it) }
         suggestionRunnable = Runnable {
             try {
-                val app = VSCodeApp.getInstance()
+                val app = VSCodeApp.instance
                 val activeTab = app.editorEngine.getActiveTab()
                 if (activeTab != null) {
                     val suggestions = app.editorEngine.getSuggestions(activeTab.id, codeEditor.selectionStart)
